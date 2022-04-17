@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: #9b7aa3;
+}
+/*header*/
+
+header{
+    margin-bottom: 10%;
+}
+ 
+.navbar{
+    border-bottom: 5px solid #9b0cbe;
+    height: 160px;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+ 
+.navbar-nav a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+.bg-light {
+    background-color: #292929!important;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(252, 252, 252, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 55%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 55%);
+}
+
+
+ 
+.navbar-nav a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;   
+}
+ 
+.navbar-nav a:hover::after{
+    width: 100%;
+    background: #973cbb;    
+}
+ 
+#logo1{
+    margin: 25px 0 25px 0;
+}
+ 
+#navbarNavAltMarkup{
+    margin: 0 55px 0 0;
+}
+
+
+
+ 
+#home{
+    color: rgb(255, 255, 255);
+    background-color: #844ac7;
+    border-radius: 3px;
+}
+ 
+#home::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;
+}
+ 
+#home:hover::after{
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+ 
+#cover{
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+ 
+.text-head1{ 
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: rgb(255, 255, 255);
+}
+ 
+.text-head2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+ 
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+ 
+#titre-bann{
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.card-img-overlay p-0{
+    height: 250px;
+}
+/*pain*/
+
+main h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    color: black;
+}
+main h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    color: black;
+}
+
+
+.article {
+    border: 5px solid #782392;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+article img {
+    justify-self: center;
+    align-self: center;
+}
+
+article div p {
+    margin:0;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+button {
+    width: 177px;
+    height: 64px;
+    justify-self: flex-end;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+
+    background-color: #b25eb9;
+    text-decoration: none;
+    border-radius:50px ;
+    border: none;
+    align-self: flex-end;
+    padding-top: 2%;
+}
+
+article{
+
+    display: flex;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 884px;
+    text-align: center;
+    margin-top: 49px;
+    margin-bottom: 49px;
+    color: #d9cae2;
+}
+
+.final_text {
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    width: 1080px;
+    margin-left: 65px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 34px;
+}
+
+*footer*/
+ 
+footer{
+    margin-top: 10%;
+}
+
+#cover{
+    height: auto;
+}
+ 
+.text-foot1{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+ 
+.social-link a{
+    list-style-type: none;
+    margin: 0 5%;
+}
+ 
+
+/*media*/
+ 
+@media all and (max-width: 845px){
+    .text-head1{   
+        margin: 0;
+        font-size: small;
+        letter-spacing: 0.1px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .text-head2{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .text-foot1{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .copyright{
+        font-size: x-small;
+    }
+
+    @keyframes expand {
+        0% {
+            transform: translateX(1400px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+ 
+@media all and (max-width: 1280px){
+    .text-head1{   
+        margin: 0;
+        font-size: small;
+        letter-spacing: 0.1px;
+        color: aliceblue;
+    }
+    
+    .text-head2{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .text-foot1{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+ 
+    .copyright{
+        font-size: x-small;
+    }
+ 
+    .navbar-nav a:after{
+        display: none;
+    }
+ 
+    #home::after{
+        display: none;
+    }
+}
+ 
+@media (min-width:2560px){
+ 
+    .text-head1{   
+        font-size: x-large;
+    }
+    
+    .text-head2{
+        font-size: xx-large;
+    }
+ 
+    .text-foot1{
+        font-size: xx-large;
+    }
+ 
+    .copyright{
+        font-size: large
+    }
+}
+
+.flip-card-back p:first-child{
+
+    color: black;
+    font-size: 25px;
+}
+
+.flip-card-back p{
+
+    color: black;
+    font-size: 22px;
+}
+
+:root {
+    --secondary-color: #8e599b;
+  --contrast-color: #d9cae2;
+}
+
+:root --secondary-color{
+    width: auto;
+    height: auto;
+}
+.overlay{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: var(--contrast-color)
+}
+
+body{
+    animation: expand .8s ease forwards;
+    transition: expand all .8s ease;
+    position: relative;
+    background-color: var(--secondary-color);
+    transform: translateY(0px);
+}
+
+
+
+@keyframes slideIn {
+    0%{
+        transform: translateX(500px) scale(.2);
+    }
+    100%{
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(1400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    border: 1px solid #ffffff;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+  .b-gallery__list-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
